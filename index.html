@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <form id="taskForm">
+        <h1 id="task_form">Task Assignment Form</h1>
+        <div class="inputField">
+            <h3 class="title">Employee Name</h3>
+            <div class="naming_input">
+                <input type="text" placeholder="First Name" id="empFirstName">     
+                <input type="text" placeholder="Last Name" id="empLastName">
+            </div>
+
+            <h3 class="title">Manager Name</h3>
+            <div class="naming_input">
+                <input type="text" placeholder="First Name" id="mFirstName">     
+                <input type="text" placeholder="Last Name" id="mLastName">
+            </div>
+
+            <div class="task">
+                <h3 class="title">Task</h3>
+                <h3 class="title">Task ID</h3>
+            </div>
+            <div class="naming_input">
+                <input type="text" placeholder="" id="taskInput">
+                <input type="text" placeholder="e.g.3" id="taskID">
+            </div>
+
+            <h3 class="title">Status</h3>
+            <div class="radioBTN">
+                <input type="radio" name="button" id="NotStarted" value="Not Started">
+                <label for="NotStarted">Not Started</label><br>
+                <input type="radio" name="button" id="InProgress" value="In Progress">
+                <label for="InProgress">In Progress</label><br>
+                <input type="radio" name="button" id="Done" value="Done">
+                <label for="Done">Done</label><br>
+                <input type="radio" name="button" id="AwaitingFeedback" value="Awaiting Feedback">
+                <label for="AwaitingFeedback">Awaiting Feedback</label>
+            </div>
+
+            <h3 class="title">Additional Notes</h3>
+            <textarea class="textarea" cols="60" rows="5" id="taskNotes" placeholder="Type Here..."></textarea>
+            <h3 class="title">Instruction</h3>
+            <textarea class="textarea" cols="60" rows="3" id="taskInstructions"></textarea>
+            <hr>
+            <button type="submit" class="submitButton">Submit</button>
+        </div>
+    </form>
+    <div id="dataOutput"></div>
+</body>
+</html>
